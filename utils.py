@@ -3,6 +3,7 @@ Utility for Date
 '''
 
 from datetime import date
+
 from datetime import datetime,timedelta 
 
 def compare_date_to_todays_date(input_date_string):
@@ -12,7 +13,16 @@ def compare_date_to_todays_date(input_date_string):
     #print(today)
     if input_date>today:
         return 1
-    return 0;
+    return 0
+
+def date_Check(d1, d2):
+    new_d1 = datetime.strptime(d1, "%Y-%m-%d")
+    
+    new_d2 = datetime.strptime(d2, "%Y-%m-%d")
+    
+    res = new_d1.date() < new_d2.date()
+    
+    return res
 
 def calculate_age_from_to(from_day,to_day):
     if to_day is None:

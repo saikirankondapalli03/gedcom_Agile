@@ -9,7 +9,7 @@ Marriage should occur before divorce of spouses, and divorce can only occur afte
 
 def user_story04(file):
     error_list = list()
-    printTables(file)
+    #printTables(file)
     indDict,famDict = parse_main(file)
     for key,familyData in famDict.items():
         #print(f"key is {key} and data is {familyData}")

@@ -10,7 +10,7 @@ Children should be born after marriage of parents (and not more than 9 months af
 
 def user_story08(file):
     error_list = list()
-    printTables(file)
+    #printTables(file)
     indDict,famDict = parse_main(file)
     
     for famId, famObject in famDict.items():
@@ -20,7 +20,7 @@ def user_story08(file):
             for eachchild in famObject.multChild:
                 indObj=indDict[eachchild]
                 birthday = indObj.Birthday
-                print(f"{birthday} > {marriedDate} is {birthday > marriedDate} ")
+                #print(f"{birthday} > {marriedDate} is {birthday > marriedDate} ")
                 if birthday < marriedDate:
                     error_list.append(f"ANOMALY: FAMILY: US08: {indObj.indID}: born {indObj.Birthday} before marriage on {marriedDate}")
                 if birthday > divorcedDate:
