@@ -20,7 +20,7 @@ def user_story04(file):
 
 
 def user_story04_main():
-    error_list= user_story04("mytestfile-us04.ged")
+    error_list= user_story04("us04testdata.ged")
     for eacherror in error_list:
         print(eacherror)
 

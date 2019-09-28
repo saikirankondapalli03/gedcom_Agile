@@ -54,7 +54,7 @@ def user_story08(file):
 
 
 def user_story08_main():
-    list_errors =user_story08("mytestfile-us08.ged")
+    list_errors =user_story08("us08testdata.ged")
     for eacherror in list_errors:
         print(eacherror)
 

@@ -3,7 +3,7 @@ from userStory08 import user_story08
 from print_main import printTables
 
 def sprint_1_user_stories():
-    master_file_name="master-sprint-1-test-data.ged"
+    master_file_name="sprint01-testdata.ged"
     printTables(master_file_name)
     error_list = []
     '''
