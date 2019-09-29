@@ -7,7 +7,7 @@ from print_main import printTables
 
 def sprint_1_user_stories():
     master_file_name="us04testdata.ged"
-    printTables(master_file_name)
+    indTable,famTable= printTables(master_file_name)
     error_list = []
     '''
     error_list.extend(user_story01(master_file_name)) 
@@ -26,8 +26,20 @@ def sprint_1_user_stories():
     error_list.extend(us06_divo_b4_death(master_file_name))
     error_list.extend(user_story08(master_file_name)) 
     
+    
+    
     for each_error in error_list:
         print(each_error)
+    
+    with open('sprint1output.txt','w') as file:
+        file.write(indTable.get_string())
+        file.write(famTable.get_string())
+        file.write("\n")
+        for each_error in error_list:
+            file.write(each_error+"\n")
+        
+        
+        
 
     
 
