@@ -32,7 +32,10 @@ def sprint_1_user_stories():
         print(each_error)
     
     with open('sprint1output.txt','w') as file:
+		file.write('\n\nIndividuals Information----------------------->\n')
         file.write(indTable.get_string())
+		file.write("\n")
+		file.write('\n\nFamily Information----------------------->\n')
         file.write(famTable.get_string())
         file.write("\n")
         for each_error in error_list:
