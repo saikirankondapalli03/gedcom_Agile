@@ -8,7 +8,7 @@ US08	Birth before marriage of parents
 Children should be born after marriage of parents (and not more than 9 months after their divorce)
 '''
 
-def user_story08(file):
+def us08_birth_b4_marr_parents(file):
     error_list = list()
     #printTables(file)
     indDict,famDict = parse_main(file)
@@ -54,7 +54,7 @@ def user_story08(file):
 
 
 def user_story08_main():
-    list_errors =user_story08("us08testdata.ged")
+    list_errors =us08_birth_b4_marr_parents("us08testdata.ged")
     for eacherror in list_errors:
         print(eacherror)
 
