@@ -9,7 +9,7 @@ from userStory05 import us05_marr_b4_death
 from print_main import printTables
 
 def sprint_1_user_stories():
-    master_file_name="sprint01-testdata.ged"
+    master_file_name="sprint01-testdata_1.ged"
     indTable,famTable= printTables(master_file_name)
     error_list = []
     error_list.extend(us01_dates_b4_curr_date(master_file_name)) 
@@ -26,10 +26,10 @@ def sprint_1_user_stories():
         print(each_error)
     
     with open('sprint1output.txt','w') as file:
-		file.write('\n\nIndividuals Information----------------------->\n')
+        file.write('\n\nIndividuals Information----------------------->\n')
         file.write(indTable.get_string())
-		file.write("\n")
-		file.write('\n\nFamily Information----------------------->\n')
+        file.write("\n")
+        file.write('\n\nFamily Information----------------------->\n')
         file.write(famTable.get_string())
         file.write("\n")
         for each_error in error_list:
