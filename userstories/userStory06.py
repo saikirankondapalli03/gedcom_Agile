@@ -45,10 +45,10 @@ def us06_divo_b4_death(file):
             #print(an_Indi1.Death)
             finalOutput1 = date_Check(id_Fam.Divorce, an_Indi1.Death)
             if finalOutput == False:
-                error_string = f"ERROR: FAMILY: US06: {id_Fam.famID} : Divorce {id_Fam.Divorce} is after death {an_Indi.Death} "
+                error_string = f"ERROR: FAMILY: US06: {id_Fam.famID} : Divorce {id_Fam.Divorce} is after death {an_Indi.Death}"
                 error_list.append(error_string)
             if finalOutput1 == False:
-                error_string = f"ERROR: FAMILY: US06: {id_Fam.famID} : Divorce {id_Fam.Divorce} is after death {an_Indi1.Death} "
+                error_string = f"ERROR: FAMILY: US06: {id_Fam.famID} : Divorce {id_Fam.Divorce} is after death {an_Indi1.Death}"
                 error_list.append(error_string)
             
                 

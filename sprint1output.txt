@@ -40,8 +40,8 @@ ERROR: INDIVIDUAL: US03: I01 : Died 1959-12-31 before born 1960-07-15
 ERROR: FAMILY: US04: F26: Divorced 2017-02-14 before married 2018-02-14 
 ERROR: FAMILY: US05: F23 : Marriage of husband:I01 occurs after death
 ERROR: FAMILY: US05: F24 : Marriage of husband:I30 occurs after death
-ERROR: FAMILY: US06: F23 : Divorce 1999-02-14 is after death 1959-12-31 
-ERROR: FAMILY: US06: F23 : Divorce 1999-02-14 is after death 1998-09-23 
+ERROR: FAMILY: US06: F23 : Divorce 1999-02-14 is after death 1959-12-31
+ERROR: FAMILY: US06: F23 : Divorce 1999-02-14 is after death 1998-09-23
 ERROR: INDIVIDUAL: US07: I34: Birth Date OF Deceased Individual:1750-06-02 and Death Date OF Deceased Individual:2013-12-31 Age is more than 150 years
 ERROR: INDIVIDUAL: US07: I35: Birth Date OF Individual:1850-06-02 Age is more than 150 years
 ANOMALY: FAMILY: US08: I34: born 1750-06-02 before marriage on 2017-02-14
