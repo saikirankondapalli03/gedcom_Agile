@@ -36,4 +36,4 @@ def printTables(fileName):
     return indTable,famTable
 
 if __name__ == "__main__":
-    printTables("mytestfile.ged")
+    printTables("gedfilestest/sprint01-testdata_1.ged")
