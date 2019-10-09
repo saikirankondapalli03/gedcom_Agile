@@ -1,11 +1,11 @@
-from userstories.userStory04 import us04_marr_b4_divo
+from userstories.sprint01_us.userStory04 import us04_marr_b4_divo
 import unittest 
 
 class UserStory04Test(unittest.TestCase):
 
     def test_us_04(self):
         
-       error_list = us04_marr_b4_divo("gedfilestest/us04testdata.ged")
+       error_list = us04_marr_b4_divo("gedfilestest/sprint01_ged/us04testdata.ged")
        print(error_list)
        self.assertEqual(error_list,['ERROR: FAMILY: US04: F23: Divorced 1980-03-14 before married 1981-02-14 '])
 

@@ -1,11 +1,11 @@
-from userstories.userStory03 import us03_birth_b4_death
+from userstories.sprint01_us.userStory03 import us03_birth_b4_death
 import unittest 
 
 class UserStory03Test(unittest.TestCase):
 
     def test_us03(self):
         
-       error_list = us03_birth_b4_death("gedfilestest/us03testdata.ged")
+       error_list = us03_birth_b4_death("gedfilestest/sprint01_ged/us03testdata.ged")
        print(error_list)
        self.assertEqual(error_list,['ERROR: INDIVIDUAL: US03: I01 : Died 1959-12-31 before born 1960-07-15 '])
    
