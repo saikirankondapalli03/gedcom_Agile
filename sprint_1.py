@@ -1,11 +1,11 @@
-from userstories.userStory04 import us04_marr_b4_divo
-from userstories.userStory08 import us08_birth_b4_marr_parents
-from userstories.userStory03 import us03_birth_b4_death
-from userstories.userStory06 import us06_divo_b4_death
-from userstories.userStory02 import us02_birth_b4_marr
-from userstories.userStory07 import us07_less_than_150years
-from userstories.userStory01 import us01_dates_b4_curr_date
-from userstories.userStory05 import us05_marr_b4_death
+from userstories.sprint01_us.userStory04 import us04_marr_b4_divo
+from userstories.sprint01_us.userStory08 import us08_birth_b4_marr_parents
+from userstories.sprint01_us.userStory03 import us03_birth_b4_death
+from userstories.sprint01_us.userStory06 import us06_divo_b4_death
+from userstories.sprint01_us.userStory02 import us02_birth_b4_marr
+from userstories.sprint01_us.userStory07 import us07_less_than_150years
+from userstories.sprint01_us.userStory01 import us01_dates_b4_curr_date
+from userstories.sprint01_us.userStory05 import us05_marr_b4_death
 from print_main import printTables
 
 def sprint_1_user_stories():

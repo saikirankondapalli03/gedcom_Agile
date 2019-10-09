@@ -1,11 +1,11 @@
-from userstories.userStory05 import us05_marr_b4_death
+from userstories.sprint01_us.userStory05 import us05_marr_b4_death
 import unittest 
 
 class UserStory05Test(unittest.TestCase):
 
     def test_us05(self):
         
-       error_list = us05_marr_b4_death("gedfilestest/us05testdata.ged")
+       error_list = us05_marr_b4_death("gedfilestest/sprint01_ged/us05testdata.ged")
        print(error_list)
        self.assertEqual(error_list,['ERROR: FAMILY: US05: F23 : Marriage of wife:I07 occurs after death',
         'ERROR: FAMILY: US05: F23 : Marriage of husband:I01 occurs after death'])
