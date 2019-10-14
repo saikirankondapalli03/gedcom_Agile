@@ -1,6 +1,6 @@
-from ..ParserModule import parse_main
-from ..utils import compare_date_to_todays_date,get_first_name
-from ..print_main import printTables
+from ParserModule import parse_main
+from utils import compare_date_to_todays_date,get_first_name
+from print_main import printTables
 '''
 US16	Male last names	All male members of a family should have the same last name
 '''

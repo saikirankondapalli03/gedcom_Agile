@@ -1,6 +1,6 @@
-from ..ParserModule import parse_main
-from ..utils import compare_date_to_todays_date,checkDiffInMonths
-from ..print_main import printTables
+from ParserModule import parse_main
+from utils import compare_date_to_todays_date,checkDiffInMonths
+from print_main import printTables
 '''
 US09    Birth before death of parents	
 Child should be born before death of mother and before 9 months after death of father

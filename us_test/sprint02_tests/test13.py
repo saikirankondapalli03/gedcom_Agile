@@ -1,8 +1,8 @@
 from userstories.sprint02_us.userStory13 import us13_siblings_spacing
 import unittest 
 
-class UserStory13Test(unittest.TestCase):
 
+class UserStory13Test(unittest.TestCase):
     def test_us13(self):
         
        error_list = us13_siblings_spacing("gedfilestest/sprint02_ged/us13testdata.ged")
