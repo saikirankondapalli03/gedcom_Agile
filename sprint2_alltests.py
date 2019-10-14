@@ -1,7 +1,7 @@
 import unittest
 from us_test.sprint02_tests.test09 import UserStory09Test
 from us_test.sprint02_tests.test16 import UserStory16Test
-from us_test.sprint02_tests.test10 import UserStory10Test
+#from us_test.sprint02_tests.test10 import UserStory10Test
 #from us_test.sprint02_tests.test11 import UserStory11Test
 #from us_test.sprint02_tests.test12 import UserStory12Test
 #from us_test.sprint02_tests.test13 import UserStory13Test
