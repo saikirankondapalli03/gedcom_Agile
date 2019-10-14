@@ -9,9 +9,9 @@ def sprint_2_user_stories():
     indTable,famTable= printTables(master_file_name)
     error_list = []
     error_list.extend(us09_birth_b4_parents_death(master_file_name))
-    error_list.extend(us11_no_bigamy(master_file_name))
-    error_list.extend(us12_parents_not_too_old(master_file_name))
-    error_list.extend(us13_siblings_spacing(master_file_name))
+    #error_list.extend(us11_no_bigamy(master_file_name))
+    #error_list.extend(us12_parents_not_too_old(master_file_name))
+    #error_list.extend(us13_siblings_spacing(master_file_name))
     error_list.extend(us16_male_last_names(master_file_name))
 
     for each_error in error_list:

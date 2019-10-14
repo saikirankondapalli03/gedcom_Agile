@@ -83,4 +83,8 @@ def checkDiffInDays(date1, date2):
     return delta.days;
 
 def get_first_name(name):
-    return name.split("/")[1]
+    try:
+        value = name.split("/");
+        return value[1];
+    except Exception as e:
+        return name.split("/")[0]
