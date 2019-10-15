@@ -5,4 +5,5 @@ python:
 before_install:
   - cd 
 script:
+  - cd $TRAVIS_BUILD_DIR
   - python -m sprint2_alltests.py
