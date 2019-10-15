@@ -1,9 +1,15 @@
 language: python
-os: linux
 python:
-  - "3.7.2"
+  - 2.7
+  - 3.5
+  - 3.6
 before_install:
-  - cd 
-script:
-  - cd $TRAVIS_BUILD_DIR
-  - python -m sprint2_alltests.py
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
+install:
+  - pip install ".[test]" . # install package + test dependencies
+script: pytest # run tests
+after_success:
+  - codecov # submit coverage
