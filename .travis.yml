@@ -1,5 +1,35 @@
 language: python
+sudo: required
+dist: trusty
+cache:
+  directories:
+    - $HOME/.cache/pip
 python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
   - "3.6"
+  - "pypy"
+  - "pypy3"
+matrix:
+  # pypy3 (as of 2.4.0) has a wacky arity issue in its source loader. Allow it
+  # to fail until we can test on, and require, PyPy3.3+. See
+  # pyinvoke/invoke#358.
+  # NOTE: both pypy flavors are weirdly unstable on Travis nowadays, even
+  # pre-test-run.
+  allow_failures:
+    - python: pypy
+    - python: pypy3
+  # Disabled per https://github.com/travis-ci/travis-ci/issues/1696
+  # fast_finish: true
+install:
+  # TODO: real test matrix with at least some cells combining different invoke
+  # and/or paramiko versions, released versions, etc
+  # Invoke from master for parity
+  # Self
+  - pip install -e .
+  - "pip install PrettyTable"
 script:
- - python sprint1_alltests.py
+  # Fast syntax check failures for more rapid feedback to submitters
+  # (Travis-oriented metatask that version checks Python, installs, runs.)
+  - python sprint1_alltests.py 
