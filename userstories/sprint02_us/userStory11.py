@@ -47,17 +47,17 @@ def us11_no_bigamy(file):
                                                        
 
                             if(indDict[id_Spouse].Death == 'NA'):
-                                error_string = f"ERROR: INDIVIDUAL: US11: {an_Indi.indID}: Individual Married to two persons in two families {marriage1.famID} and {marriage2.famID} "
+                                error_string = f"ERROR: INDIVIDUAL: US11: {an_Indi.indID}:Married2 {marriage1.famID} & {marriage2.famID}"
                                 error_list.append(error_string)                                    
                             
                             else:
                                 if (date_Check(marriage2.Marriage, indDict[id_Spouse].Death)):
-                                    error_string = f"ERROR: INDIVIDUAL: US11: {an_Indi.indID}: Individual Married to two persons in two families {marriage1.famID} and {marriage2.famID} "
+                                    error_string =f"ERROR: INDIVIDUAL: US11: {an_Indi.indID}:Married2 {marriage1.famID} & {marriage2.famID}"
                                     error_list.append(error_string)
                         else:
                             
                             if (date_Check(marriage2.Marriage, marriage1.Divorce)):
-                                error_string = f"ERROR: INDIVIDUAL: US11: {an_Indi.indID}: Individual Married to two persons in two families {marriage1.famID} and {marriage2.famID} "
+                                error_string = f"ERROR: INDIVIDUAL: US11: {an_Indi.indID}:Married2 {marriage1.famID} & {marriage2.famID}"
                                 error_list.append(error_string)
             
             
