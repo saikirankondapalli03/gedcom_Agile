@@ -31,12 +31,10 @@ Family Information----------------------->
 | F25 | 2017-02-14 |     NA     |    I32     |     Jane     |   I33   |      Wooly       |     ['I34', 'I35']    |
 | F26 | 2018-02-14 | 2017-02-14 |    I36     |    Shini     |   I37   |     Comango      | ['I38', 'I39', 'I40'] |
 +-----+------------+------------+------------+--------------+---------+------------------+-----------------------+
-ERROR: INDIVIDUAL: US12: The age difference of child:I38 and mother:I37 is greater than or equal to 60
-ERROR: INDIVIDUAL: US12: The age difference of child:I38 and father:I36 is greater than or equal to 80
-ERROR: INDIVIDUAL: US12: The age difference of child:I39 and mother:I37 is greater than or equal to 60
-ERROR: INDIVIDUAL: US12: The age difference of child:I39 and father:I36 is greater than or equal to 80
-ERROR: INDIVIDUAL: US12: The age difference of child:I40 and mother:I37 is greater than or equal to 60
-ERROR: INDIVIDUAL: US12: The age difference of child:I40 and father:I36 is greater than or equal to 80
-ERROR: FAMILY: US13: The spacing between sibling1:I38 and sibling2:I39 of family:F26 is not valid
-ERROR: FAMILY: US13: The spacing between sibling1:I38 and sibling2:I40 of family:F26 is not valid
-ERROR: FAMILY: US13: The spacing between sibling1:I40 and sibling2:I39 of family:F26 is not valid
+ERROR: FAMILY: US09 : Individual I19 Name: Dick /Smith/ born 9 months after death of father I01 Joe /Smith/
+ERROR: FAMILY: US09 : Individual I26 Name: Jane /Smith/ born 9 months after death of father I01 Joe /Smith/
+ERROR: FAMILY: US16: Individual I34 Name: Winga not matched with family first name: Jane
+ERROR: FAMILY: US16: Individual I35 Name: Chinga not matched with family first name: Jane
+ERROR: FAMILY: US16: Individual I38 Name: Rodri not matched with family first name: Shini
+ERROR: FAMILY: US16: Individual I39 Name: Rodrianne not matched with family first name: Shini
+ERROR: FAMILY: US16: Individual I40 Name: Roxanne not matched with family first name: Shini
