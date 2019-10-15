@@ -3,7 +3,7 @@ python:
   - "3.6"
 install:
   - pip install PrettyTable
-  - pip install dateutil
+  - pip install python-dateutil
   - sudo apt-get install -y r-base
 script:
   - python -m unittest sprint1_alltests.py
