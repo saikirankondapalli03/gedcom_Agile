@@ -1,13 +1,7 @@
 language: python
 os: windows
-language: sh
 python:
-  - "3.5"
-before_install:
-        - choco install python3
-        - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
+  - "3.7.2"
 script:
-  - echo $TRAVIS_BUILD_DIR
-  - cd $TRAVIS_BUILD_DIR/
   - python -m unittest $TRAVIS_BUILD_DIR/sprint1_alltests.py
   - python -m unittest $TRAVIS_BUILD_DIR/sprint2_alltests.py
