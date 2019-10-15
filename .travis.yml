@@ -5,4 +5,4 @@ python:
 before_install:
   - cd 
 script:
-  - python -m unittest sprint2_alltests.py
+  - python -m sprint2_alltests.py
