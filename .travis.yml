@@ -8,5 +8,6 @@ before_install:
         - export PATH="/c/Python37:/c/Python37/Scripts:$PATH"
 script:
   - echo $TRAVIS_BUILD_DIR
+  - cd $TRAVIS_BUILD_DIR/
   - python -m unittest $TRAVIS_BUILD_DIR/sprint1_alltests.py
   - python -m unittest $TRAVIS_BUILD_DIR/sprint2_alltests.py
