@@ -1,0 +1,6 @@
+language: python
+python:
+  - "3.5"
+script:
+  - python -m unittest sprint1_alltests.py
+  - python -m unittest sprint2_alltests.py
